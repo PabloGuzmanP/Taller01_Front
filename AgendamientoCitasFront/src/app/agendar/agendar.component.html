@@ -1,0 +1,32 @@
+<div class="crear">
+    <div class="card">
+        <form class="custom-form" [formGroup]="pacienteForm" (ngSubmit)="onSubmit()">
+            <h1>Agendar Cita</h1>
+            <label for="cedula">Cedula</label>
+            <br>
+            <input type="text" formControlName="cedula" name="cedula" placeholder="cedula" required="required" />
+            <br>
+            <label for="nombre">Nombre</label>
+            <br>
+            <input type="text" formControlName="nombre" name="nombre" placeholder="nombre" required="required" />
+            <br>
+            <label for="apellido">Apellido</label>
+            <br>
+            <input type="text" formControlName="apellido" name="apellido" placeholder="apellido" required="required" />
+            <br>
+            <label for="edad">Edad</label>
+            <br>
+            <input type="text" formControlName="edad" name="edad" placeholder="edad" required="required" />
+            <br>
+            <label for="fecha">Fecha</label>
+            <br>
+            <input type="text" formControlName="fecha" name="fecha" placeholder="yyyymmdd" required="required" />
+            <br>
+            <label for="hora">Hora</label>
+            <br>
+            <input type="text" formControlName="hora" name="hora" placeholder="0:00" required="required" />
+            <br>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+</div> 

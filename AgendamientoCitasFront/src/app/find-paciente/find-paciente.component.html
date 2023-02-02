@@ -1,0 +1,17 @@
+<h2>Ingresar nombre del paciente:</h2>
+<div class="busqueda">
+    <form class="custom-form" [formGroup]="searchForm" (ngSubmit)="buscar()">
+        <input type="text" class="form-control rounded" placeholder="Buscar" formControlName="busqueda"
+            name="busqueda" />
+        <br>
+        <button type="submit" class="btn btn-primary">buscar</button>
+    </form>
+    <div class="col-4" *ngFor="let user of result">
+        <div class="card-body">
+            <h2>Datos del Paciente:</h2>
+            <h3 class="userCedula">Cedula: {{user.cedula}}</h3>
+            <h6 class="userNombre">Nombre: {{user.nombre}}</h6>
+            <h6 class="userHora">Hora: {{user.hora}}</h6>
+        </div>
+    </div>
+</div>

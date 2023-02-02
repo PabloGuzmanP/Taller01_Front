@@ -1,0 +1,15 @@
+<div class="row align-items-center">
+    <div class="col-4"  *ngFor="let paciente of pacientes">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="bookName">{{paciente.cedula}}</h3>
+                <h3 class="bookName">{{paciente.nombre}}</h3>
+                <h3 class="bookName">{{paciente.apellido}}</h3>
+                <h3 class="bookName">{{paciente.edad}}</h3>
+                <h3 class="bookName">{{paciente.fecha}}</h3>
+                <h3 class="bookName">{{paciente.hora}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<a class="btn" href="/fecha">Buscar</a>
